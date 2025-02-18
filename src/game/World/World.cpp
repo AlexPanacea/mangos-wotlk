@@ -1577,9 +1577,6 @@ void World::SetInitialWorldSettings()
 
 #ifdef ENABLE_PLAYERBOTS
     sPlayerbotAIConfig.Initialize();
-#ifndef BUILD_AHBOT
-    auctionbot.Init();
-#endif
 #endif
 
     sLog.outString("---------------------------------------");
@@ -1732,14 +1729,6 @@ void World::Update(uint32 diff)
 #endif
 
 #ifdef ENABLE_PLAYERBOTS
-#ifndef BUILD_AHBOT
-    /// <li> Handle AHBot operations
-    if (m_timers[WUPDATE_AHBOT].Passed())
-    {
-        auctionbot.Update();
-        m_timers[WUPDATE_AHBOT].Reset();
-    }
-#endif
     sRandomPlayerbotMgr.UpdateAI(diff);
     sRandomPlayerbotMgr.UpdateSessions(diff);
 #endif

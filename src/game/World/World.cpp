@@ -83,7 +83,6 @@
 #endif
 
 #ifdef ENABLE_PLAYERBOTS
-#include "ahbot/AhBot.h"
 #include "playerbot/PlayerbotAIConfig.h"
 #include "playerbot/RandomPlayerbotMgr.h"
 #endif

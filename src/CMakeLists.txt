@@ -29,7 +29,7 @@ if(BUILD_PLAYERBOTS)
     PlayerBots
     SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/modules/PlayerBots"
     GIT_REPOSITORY "https://github.com/AlexPanacea/playerbots.git"
-    GIT_TAG "fix/itemGuidLow_crash"
+    GIT_TAG "fix/use_usefull_items_from_mail"
   )
 
   FetchContent_GetProperties(PlayerBots)

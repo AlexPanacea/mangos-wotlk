@@ -35,7 +35,6 @@
 #include "GameEvents/GameEventMgr.h"
 
 #ifdef ENABLE_PLAYERBOTS
-#include "ahbot/AhBot.h"
 #include "playerbot/playerbot.h"
 #include "playerbot/PlayerbotAIConfig.h"
 #endif
